@@ -1,10 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>UX Research Crash Course : Day One</title>
+	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400i|Oswald:300,400,700|Quattrocento:400,700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/main.js"></script>
 </head>
+
 <body>
+	<header>
+		<div>
+			<div id="logo"><a href="index.html">UX Research Crash Course</a></div>
+			<div id="tagline">Listen. Learn. Repeat.</div>
+		</div>
+		
+	</header>
+	
+	<nav>
+		<div class="nav-item"><a href="manifesto.html">Manifesto</a></div>
+		<div class="nav-item-current"><a href="dayone.html">Day One</a></div>
+		<div class="nav-item"><a href="daytwo.html">Day Two</a></div>
+		<div class="nav-item"><a href="daythree.html">Day Three</a></div>
+		<div class="nav-item"><a href="dayfour.html">Day Four</a></div>	
+	</nav>
+
+	<main>
+		<div class="intro">
+			<div class="intro-heading">
+				<h1>Day One</h1>
+				<p class="subheading">Prepare to learn</p>
+			</div>
+
+
+			<div id="checklist">
+				<h2>Checklist</h2>
+				<p>draft script</p>
+				<p>write screener</p>
+				<p>define recruit pool</p>
+				<p>send out screener</p>
+			</div>
+		</div>
+
+
+
+		<div class="body-content">
+				<p>Your ultimate goal is to have meaningful 30-45 minute conversations with around 8-10 carefully selected users.
+				Preparation for research revolves around three elements:</p>
+
+				<p class="temp">TK Prototype: what you will show
+				Questions: what you want to learn
+				Recruits : who you will ask</p>
+
+				<p>UX Research is best conducted as a group activity; make sure your core team is involved during this phase. Facilitate the conversation and take notes and allow the team to focus on what they want to learn.
+
+				It may not be a linear process, as one element may influence the other two. Likely you will bounce between all three and make refinements as you go.</p>
+
+
+			<h2>Draft Script</h2>
+				<p>Start by deciding what you will put in front of users. Using the term &ldquo;prototype&rdquo; as a loose definition, this might be your live site or something you've been working on. Format can vary from code to PDF to Sketch artboards. The level of fidelity is up to you; just make sure you won't spend the majority of the interview explaining the prototype.</p>
+
+				<p>Because your interviews will be roughly 30 minutes, respect your users' time by presenting just enough. You want users to accomplish a task and a single screen generally will not give enough context. Consider defining the task that you want the user to accomplish.</p>
+
+				<p class="temp">Viewport
+				[----full web site------] too long!
+				[onboarding experience] 
+				[one screen] I don't understand this</p>
+
+				<p class="temp">Can I show several versions of a screen and have users vote?
+				Avoid this scenario for a few reasons. Having users review isolated screens removes the context of use and takes them into a passive "Mona Lisa Mode" in which screens are observed like paintings instead of a tool to accomplish a task. Additionally, you will not be talking to a sample size large enough for voting responses to be meaningful.</p>
+
+<!-- 			<h2>Script</h2> -->
+<!-- 				<p>Walk through the prototype and question storm; brainstorming what you want to learn. Assemble your questions into a document which will serve as your script. Don't be concerned with having to answer every single question; because you are creating a habit of regular research you will answer these in future sessions.</p> -->
+
+			<h3>Key Discoverables</h3>
+
+				<p>Define your learning objectives and why you're testing in the first place. Perhaps you want to understand where the drop-off points are in your onboarding experience. Or reactions to a newly-redesigned feature. Assemble your questions into a document which will serve as your script.</p>
+
+				<div class="example">
+					<h4><span>Example</span></h4>
+					<p>We want to evaluate the user flow and visualizations in our new retirement planning feature.</p>
+				</div>
+
+			<h3>Specific Questions</h3>
+				<p>Walk through the prototype and document in your script the questions for each screen.</p>
+
+				<div class="example">
+					<h4><span>Example</span></h4>
+					<p>&ldquo;Can the user find the retirement planning tool from the home page?&rdquo;</p>
+					<p>&ldquo;Does the user understand what happens when they click the 'Calculate my retirement' button?&rdquo;</p>
+				</div>
+
+			<h3>Discovery Questions</h3>
+				<p>You'll want gauge a users' ability to use your product; but even a product that is easy to use doesn't mean a user will engage with it - perhaps because they've got their own tools and processes that work for them. For this reason, it is helpful to tack on discovery questions at the end to better understand how your users think about a particular task, or their attitudes and beliefs.</p>
+
+				<div class="example">
+					<h4><span>Example</span></h4>
+					<p>&ldquo;Where do you usually go to seek retirement savings advice? Why?&rdquo;</p>
+					<p>&ldquo;If I asked you to describe your outlook when it comes to the amount you have saved what would you say? Why?&rdquo;</p>
+				</div>
+
+				<p id="button-complete">Draft Script: Complete</p>
+
+			<h2>Write Screener</h2>
+				<p>The best possible audience is actual users. If your users have a login and can be identified through usage data, even better.</p>
+
+			<h3>Who do we want to talk to?</h3>
+				<p>Determine the characteristics of the users you want to talk to. As you take notes, determine specifically how you will get at this information. Put them in your draft script for now, and  enter them into <a href="https://ethn.io/">ethn.io</a> later.</p>
+
+				<div class="example">
+					<h4><span>Example</span></h4>
+					<p>We want to evaluate the user flow and visualizations in our new retirement planning feature.</p>
+					<p>We want to talk to<br />
+					Active users who have logged into our app in the past 2 months [get from analytics]<br />
+					Mix of early retirement savers (20's 30's) and later-stage retirement savers (40's and 50's)
+					[age]</p>
+				</div>
+
+			<h3>Who do we NOT want to talk to?</h3>
+				<p>Just as important as who you are talking to, determine who you do not want to talk to, such as users with special expertise or knowledge, or are unengaged in the activity you are studying.</p>
+
+				
+				<div class="example">
+					<h4><span>Example</span></h4>
+					<p>We want to evaluate the user flow and visualizations in our new retirement planning feature.</p>
+					<p>We do not want to talk to<br />
+					Dormant users who have not logged into the app in the past 2 weeks
+					[get from analytics]<br />
+					Financial planners, anyone involved in the finance industry
+					[job title]<br />
+					Retirees
+					[job title] OR [are you retired? Y/N]<br />
+					Anyone not actively saving for retirement
+					[are you currently saving for retirement? Y/N]<br />
+					[better: which of the retirement accounts do you have 401K/Roth IRA/Health Savings Account(HSA)/Other(what)]</p>
+				</div>
+
+				<p>Make sure your screener questions are clear to avoid false positives and negatives</p>
+				
+			<div class="example">	
+				<h4><span>Example</span></h4>
+				<p><strong>Subject to interpretation</strong><br />
+				Are you on a High Deductible Healthcare Plan (HDHP)? <br/>
+				&ldquo;Yes, I think my healthcare deductible is way too high.&rdquo;
+				<p><strong>Clearer version</strong><br />
+				Are you on a High Deductible Healthcare Plan (HDHP) with an annual deductible of $1250 or higher? <br />&ldquo;Oh. No.&rdquo;</p>
+			</div>
+
+				<p>Remember it's not a survey
+				Demographic data such as gender, marital status, household income is only helpful to the extent it affects the behavior you are researching.
+				For example, if you are researching a retirement planning tool, someone who is 26 may view retirement savings differently than a 50 year old.
+				But remember, we aren't conducting a quantitative survey. You are only going to interview 8-10 users. Keep in mind you are developing a habit of talking to users. You will have many more opportunities to further your research.</p>
+
+
+				<p>Common Questions<p>
+				<p>"Isn't it easier to send a survey?"
+				Nope.
+				**Question** "What if I can't talk to real users?"
+				You may find yourself 
+				**Question** "Should we test with a regular panel?"
+				Short answer: No
+				Long answer: Here is Michael Margolis 
+				**Question** "Should we talk to our friends and family?"
+				Not if you want your research to be taken seriously</p>
+
+				<p>Write Screener: Complete</p>
+			
+			<h2>Define Recruit Pool</h2>
+
+				<p>Your recruit pool is comprised of the users who will get an invite. To recruit 8-10 users, aim to send 50-80 emails out. Adjust accordingly based on responses. Avoid sending out a blanket email to all your users. The goal is to build a habit of talking to users regularly and if you keep sending out emails to your entire user base, you'll likely annoy them.</p>
+
+				<p class="temp">FUNNEL
+				Step one: Reduce recruits based on analytics data (user pool > analytics requirements)
+				Step two: Randomize
+				Step three: Send the screener</p>
+
+				<p>If possible, separate usage data you can get from analytics from screener questions users will answer. This allows you to whittle down your pool and reduces user error answering screener questions - you don't have to rely on a user trying to recall the last time they logged in. Use SQL to filter out or pinpoint users; or find someone who will teach you how.</p>
+
+				<div class="example">
+					<h4><span>Examples</span></h4>
+					<p>Users who have logged at least once in the past 2 weeks<br />
+					Users who have downloaded our mobile app</p>
+				</div>
+
+				<p>Determine Recruit Pool: Complete</p>
+
+			<h2>Send Screener</h2>
+				<p>Now it's time to send out your screener. Use an email marketing app if you have access to one; MailChimp is a good one. For subject lines, I have found a simple "Can you help?" performs well. For the body content, keep it short and sweet.</p>
+
+				<div class="example">
+					<h4><span>Example</span></h4>
+					<p><strong>$20 Amazon gift card for 30 minutes of your time</strong><br />
+					We are looking for feedback on new app features . All you need is  a computer and an internet connection. 
+					[link to screener]</p>
+				</div>
+
+				<p>TIP
+				Mondays are typically low turnout</p>
+
+				<p>Send Screener: Complete</p>
+			</div>
+
+	</main>
+	<footer>
+		<p class="about-tab">About</p>
+		<div class="about">
+			<div class="about-headshot"><img src="images/about_headshot.png" alt="Katherine headshot"></div>
+			<div class="about-content">
+				<p>Hello! I'm Katherine Kendall, User Experience Designer and Researcher. I've worked for Fortune 500 corporations and smaller startups in industries ranging from hospitality to broadcast media to finance to healthcare. Over the years, I've conducted hundreds of user interviews that help teams build better products.</p>
+			
+				<p>When I'm not talking to users or sketching designs, you'll find me out <a href="http://www.fueledbydoughnuts.org/">running the roads</a>, <a href="https://www.japansociety.org/">studying Japanese</a>, or <a href="https://www.washingtonpost.com/news/comic-riffs/wp/2017/04/26/as-saga-returns-writer-brian-k-vaughan-looks-to-the-future-with-no-immediate-end-in-sight/?utm_term=.8eb1c86d04a7">curled up with a good graphic novel.</a> I swear too much, <a href="http://www.cam.ac.uk/research/news/frankly-do-we-give-a-damn-study-finds-links-between-swearing-and-honesty">honestly.</a></p>
+
+				<p><a href="http://www.katherinekendall.com">More about me over here.</a></p>
+
+				<p>This site was created as a final project for Front End Web Development at General Assembly. If you have comments or something isn't rendering correctly, I'd love to hear from you</p>
+			</div>
+		</div>
+		<div class="credits">
+			<p>&copy;2018 Katherine Kendall</p>
+			<p><a href="credits.html">Credits</a></p>
+		</div>
+	</footer>
 	
 </body>
 </html>

@@ -12,17 +12,22 @@ $(document).ready(function() {
 //when user clicks on about tab again, slide down and hide about div
 //seems like a toggle is a good idea
 
-// $('.about').hide();
-// 	$('.about-tab').click(function() {
-// 		$('.about').slideToggle(1000);
-// 	});
+$('.about').hide();
+	$('.about-tab').click(function() {
+		$('.about').slideToggle(1000);
+	});
 
 
 
+//localStorage.setItem('write-screener','completed')
+// var itemsToCo,plete = {
+// 	writeScreener: true,
+// 	otherThing: false,
+// }
 
+// localStorage.setItem('items-to-complete',JSON.stringify(itemsToComplete)
 
-
-
+// var fromLocalStorage = localStorage.getItem('items-to-complete')
 //...and don't delete this little guy below
 });
 
