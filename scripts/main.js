@@ -7,20 +7,47 @@ console.log('We are connected YAY')
 $(document).ready(function() {
 //put all functions in here
 
+
+//ABOUT SLIDER
 //on default hide the about content
 //when user clicks on about tab, slide up to reveal the about div
 //when user clicks on about tab again, slide down and hide about div
 //seems like a toggle is a good idea
 
+console.log('About Slider')
 $('.about').hide();
 	$('.about-tab').click(function() {
 		$('.about').slideToggle(1000);
 	});
 
 
+//CHECKOFF FUNCTIONALITY
+//first check to see if local storage is supported
+//when user clicks on Completed button
+//replace the undone icon in checklist with done icon
+//change button state to status-complete
+//toggle functionality
+//if user clicks on status-complete
+//replace done icon in checklist with undone icon
+//change button state to status-incomplete
+
+console.log('Local storage setup')
+if (typeof(Storage) !== 'undefined') {
+	//put all the rest of the code in here
+	// Store
+	localStorage.setItem('draft-script','complete')
+	//Retrieve
+	document.getElementById('result')
+} else {
+	//Sorry! No web storage support
+}
+
+
+
+//STICKY CHECKLIST
 
 //localStorage.setItem('write-screener','completed')
-// var itemsToCo,plete = {
+// var itemsToComplete = {
 // 	writeScreener: true,
 // 	otherThing: false,
 // }
@@ -28,8 +55,19 @@ $('.about').hide();
 // localStorage.setItem('items-to-complete',JSON.stringify(itemsToComplete)
 
 // var fromLocalStorage = localStorage.getItem('items-to-complete')
+
+// window.addEventListener('scroll', (e) => console.log(e))
+// is the same as
+// window.addEventListener('scroll', function(e) {
+//   console.log(e)
+// })
 //...and don't delete this little guy below
 });
+
+
+
+
+
 
 
 
