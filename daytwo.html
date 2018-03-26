@@ -1,10 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>UX Research Crash Course : Day Two</title>
+	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<!--google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400i|Oswald:200,300,400,700|Quattrocento:400,700" rel="stylesheet">
+	<!--font awesome icon set-->
+  <script defer src="scripts/fontawesome-all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/main.js"></script>
 </head>
+
 <body>
+	<header>
+		<div>
+			<div id="logo"><a href="index.html">UX Research Crash Course</a></div>
+			<div id="tagline">Listen. Learn. Repeat.</div>
+		</div>
+		
+	</header>
+	
+	<nav>
+		<div class="nav-item"><a href="manifesto.html">Manifesto</a></div>
+		<div class="nav-item"><a href="dayone.html">Day One</a></div>
+		<div class="nav-item-current"><a href="daytwo.html">Day Two</a></div>
+		<div class="nav-item"><a href="daythree.html">Day Three</a></div>
+		<div class="nav-item"><a href="dayfour.html">Day Four</a></div>	
+	</nav>
+
+	<main>
+		<div class="intro">
+			<div class="intro-heading">
+				<h1>Day Two</h1>
+				<p class="subheading">Set up to slam dunk</p>
+			</div>
+
+
+
+			<div id="checklist">
+				<h2>Checklist</h2>
+				<p><i class="far fa-circle"></i> schedule recruits</p>
+				<p><i class="far fa-circle"></i> refine script</p>
+				<p><i class="far fa-circle"></i> set up room</p>
+				<p><i class="far fa-circle"></i> QA prototype</p>
+				<p><i class="far fa-circle"></i> remind team</p>
+			</div>
+		</div>
+
+
+		<div class="body-content">
+				<p>Your ultimate goal is to have meaningful 30-45 minute conversations with around 8-10 carefully selected users.</p>
+
+				<h2>Schedule Recruits</h2>
+				<p>As the ethn.io schedule fills up in ethn.io, start picking and scheduling them. Exciting! Expect one or two no-shows or cancellations; I've found it helpful to schedule more interviews the first day than the subsequent day(s).</p>
+
+				<p>Testing will likely take place over several days. You may hate me now for making this seem like a single day.</p>
+
+				<p>TIP For 30 minute interviews, schedule an hour. This gives some breathing room to accommodate late-shows, technology burps, or gregarious users.</p>
+
+				<p>Use ethn.io to send out confirmations, or send them on your own.</p>
+
+				<div class="example">
+					<h4><span>Example</span></h4>
+					<p>Note: this was a GoTo Meeting 
+					Here are details for your interview at [Date] [Time including time zone]. You will need access to a computer with a high-speed internet connection and a phone (optional).</p>
+
+					<p>At your scheduled time, please click on this link
+					[GoToMtg Link]</p>
+
+					<p>You can use your computer microphone and speakers (headset recommended)<br />
+					OR<br />
+					If you want to use your telephone, use the number below<br />
+					Dial +1 (111) 111-1111<br />
+					Access Code: 111-111-111</p>
+
+					<p>There is also a consent form located here: [Link to consent form] – I'll go over this briefly if you have any questions.</p>
+
+					<p>I look forward to speaking with you!</p>
+				</div>
+
+				<h3>Consent Form</h3>
+				<p>Because you are recording your interviews, you will need your users' consent for each session. If they don't sign beforehand, have them do it before you start your session before you start recording.</p>
+
+				<p>TIP Use Google Docs to <a href="https://docs.google.com/forms/d/1GkrAWI_fnsd19NnH1QxRjC8qN29xFdypXQnRYi92YmU/edit">host a basic boilerplate consent form</a></p>
+
+				<div class="checklist-button">
+					<p id="button-schedule-recruits" class="button-incomplete">Schedule Recruits: Complete</p>
+				</div>
+
+
+			<h2>Set Up Room</h2>
+				<p>Don't waste valuable time fiddling with a monitor or troubleshooting your conferencing tool. QA the setup before your session by having a colleague dial in. Test what they see, what you will see, and what happens when you hand over control of your screen.</p>
+
+				<h3>Set up (adjust as needed)</h3>
+				<p><strong>Laptop with external hard drive</strong>
+				Screen recordings can become enormous in size; save them to the hard drive</p>
+
+				<p><strong>Quicktime (Mac)</strong>
+				After the user signs the consent form, go to Quicktime File > New Screen Recording</p>
+
+				<p><strong>Monitor A (&ldquo;Onstage&rdquo;)</strong>
+				This is what the user will see during the session, and what Quicktime will be recording</p>
+
+				<p><strong>Monitor B (&ldquo;Offstage&rdquo;)</strong>
+				Any items (another prototype for example) that you do not want the user to see</p>
+
+				<p><strong>Sticky notes and/or Whiteboard</strong>
+				Have plenty of sticky notes and pens for observers</p>
+
+				<p>TIP Clear your browser cache or create a browser profile for testing purposes</p>
+
+				<div class="checklist-button">
+					<p id="button-setup-room" class="button-incomplete">Set Up Room: Complete</p>
+				</div>
+
+			<h2>Refine Script</h2>
+				<p>Go through the flow of your script. Personally, I like to write out the script, not so much to read line-by-line but as a reminder not to forget anything. Remember, once you come up with a script you can easily reuse it for future sessions.</p>
+
+				<p>Add a few new sections to the script:</p>
+
+				<h3>Introduction</h3>
+				<p>Start off each session thanking the user for their time, and ask a few questions, such as where the user works, what they do, perhaps how long they've used your product. The purpose is to warm up both you and your user. Next, give a bit of background as to what you will be doing today. I like to reiterate that I want them to be honest with me, and assure them I didn't design this product so nothing they say will hurt my feelings. Also mention you'll ask them to think out loud whenever possible. Before you show the user your prototype you want them to feel comfortable with giving feedback.</p>
+
+				<p>TIP There is no need to introduce anyone else observing. You want your user to feel at ease, not like they're on a stage.</p>
+
+				<h3>Test Cues</h3>
+				<p>Add any prompts, such as START RECORDING, so you don't forget. Review your questions; keep them open-ended, to get to the &ldquo;why.&rdquo; The goal is to observe users interacting with your product, not to instruct them how to use it.</p>
+
+				<div class="example">
+					<h4><span>Example</span></h4>
+					<p><strong>Instead of</strong>
+						<ul>
+						<li>This product is pretty cool, isn't it?</li>
+						<li>How often will you use it?</li>
+						<li>Don't you like it?</li>
+						<li>Let me show you how this works.</li>
+						</ul>
+					</p>
+
+					<p><strong>Ask</strong>
+						<ul>
+						<li>What do you think this means?</li>
+						<li>Tell me more about what you mean by that.</li>
+						<li>What do you think will happen next?</li>
+						<li>Is that what you expected to have happen? Why / why not?</li>
+						<li>How are you feeling at this point?</li>
+						</ul>
+					</p>
+				</div>
+
+				<h3>Wrap Up</h3>
+				<p>As you wrap up after your discovery questions, graciously thank users for their time. Let them know when to expect their incentive and what to do if they do not.</p>
+
+				<p><a href="https://docs.google.com/document/d/1DTqwx-yW2C01IyCIMwWTngU_YWGjjlV6O4JCqyRpz-0/edit#">Here is an example of a finished script.</a> Some items such as the greeting and introduction remain the same from script to script.</p>
+
+			<h2>QA Prototype</h2>
+				<p>User tests can veer off course due to broken links or misspellings. Just as you would QA your test setup, QA your prototype as well.</p>
+
+				<p>TIP
+				Use real data instead of pop culture references and silly names. For example, if a screen contains a list of other users, don't use Game of Thrones cast members or Ed Sheeran and Lady Gaga as placeholders.</p>
+
+				<div class="checklist-button">
+					<p id="button-refine-script" class="button-incomplete">Refine Script: Complete</p>
+				</div>
+
+			<h2>Remind Team</h2>
+
+			<p>Send a quick update your team with the date(s) and times, and  reiterate testing norms:
+				<ul>
+				<li>Show up on time as to not disrupt testing in progress</li>
+				<li>Stay in "silent observation" mode; under no circumstance should anyone interrupt the test </li>
+				<li>If anyone has a question, write it on a sticky note and pass it to you</li>
+				</ul>
+			</p>
+
+			<p>Keep it upbeat and light - get the team excited about learning and having their burning questions answered!</p>
+
+			<div class="checklist-button">
+					<p id="button-remind-team" class="button-incomplete">Remind Team: Complete</p>
+				</div>
+
+			<p id="next-page"><i class="fas fa-chevron-circle-right fa-lg"></i> <a href="daythree.html">Almost There! Day Three: Test</a></p>		
+			</div>
+
+	</main>
+	<footer>
+		<p class="about-tab">About</p>
+		<div class="about">
+			<div class="about-headshot"><img src="images/about_headshot.png" alt="Katherine headshot"></div>
+			<div class="about-content">
+				<p>Hello! I'm Katherine Kendall, User Experience Designer and Researcher. I've worked for Fortune 500 corporations and smaller startups in industries ranging from hospitality to broadcast media to finance to healthcare. Over the years, I've conducted hundreds of user interviews that help teams build better products.</p>
+			
+				<p>When I'm not talking to users or sketching designs, you'll find me out <a href="http://www.fueledbydoughnuts.org/">running the roads</a>, <a href="https://www.japansociety.org/">studying Japanese</a>, or <a href="https://www.washingtonpost.com/news/comic-riffs/wp/2017/04/26/as-saga-returns-writer-brian-k-vaughan-looks-to-the-future-with-no-immediate-end-in-sight/?utm_term=.8eb1c86d04a7">curled up with a good graphic novel.</a> I swear too much, <a href="http://www.cam.ac.uk/research/news/frankly-do-we-give-a-damn-study-finds-links-between-swearing-and-honesty">honestly.</a></p>
+
+				<p><a href="http://www.katherinekendall.com">More about me over here.</a></p>
+
+				<p>This site was created as a final project for Front End Web Development at General Assembly. If you have comments or something isn't rendering correctly, I'd love to hear from you</p>
+			</div>
+		</div>
+		<div class="credits">
+			<p>&copy;2018 Katherine Kendall</p>
+			<p><a href="credits.html">Credits</a></p>
+		</div>
+	</footer>
 	
 </body>
 </html>

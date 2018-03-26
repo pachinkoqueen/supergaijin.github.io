@@ -7,7 +7,10 @@
 	<title>UX Research Crash Course : Day One</title>
 	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
 	<link rel="stylesheet" type="text/css" href="./styles/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:400i|Oswald:300,400,700|Quattrocento:400,700" rel="stylesheet">
+	<!--google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400i|Oswald:200,300,400,700|Quattrocento:400,700" rel="stylesheet">
+	<!--font awesome icon set-->
+  <script defer src="scripts/fontawesome-all.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="scripts/main.js"></script>
 </head>
@@ -23,7 +26,12 @@
 	
 	<nav>
 		<div class="nav-item"><a href="manifesto.html">Manifesto</a></div>
-		<div class="nav-item-current"><a href="dayone.html">Day One</a></div>
+		<div class="nav-item-current">
+<!-- 			<span class="fa-1x fa-layers fa-fw">
+				<i class="fas fa-certificate"></i>
+				<span class="fa-layers-text fa-inverse" data-fa-transform="shrink-5" style="font-weight: 300">1</span>
+			</span> -->
+			<a href="dayone.html">Day One</a></div>
 		<div class="nav-item"><a href="daytwo.html">Day Two</a></div>
 		<div class="nav-item"><a href="daythree.html">Day Three</a></div>
 		<div class="nav-item"><a href="dayfour.html">Day Four</a></div>	
@@ -37,22 +45,22 @@
 			</div>
 
 
+
 			<div id="checklist">
 				<h2>Checklist</h2>
-				<p>draft script</p>
-				<p>write screener</p>
-				<p>define recruit pool</p>
-				<p>send out screener</p>
+				<p><i class="far fa-circle"></i> draft script</p>
+				<p><i class="far fa-circle"></i> write screener</p>
+				<p><i class="far fa-circle"></i> define recruit pool</p>
+				<p><i class="far fa-circle"></i> send out screener</p>
 			</div>
 		</div>
-
 
 
 		<div class="body-content">
 				<p>Your ultimate goal is to have meaningful 30-45 minute conversations with around 8-10 carefully selected users.
 				Preparation for research revolves around three elements:</p>
 
-				<p class="temp">TK Prototype: what you will show
+				<p class="temp">Prototype: what you will show
 				Questions: what you want to learn
 				Recruits : who you will ask</p>
 
@@ -64,7 +72,7 @@
 			<h2>Draft Script</h2>
 				<p>Start by deciding what you will put in front of users. Using the term &ldquo;prototype&rdquo; as a loose definition, this might be your live site or something you've been working on. Format can vary from code to PDF to Sketch artboards. The level of fidelity is up to you; just make sure you won't spend the majority of the interview explaining the prototype.</p>
 
-				<p>Because your interviews will be roughly 30 minutes, respect your users' time by presenting just enough. You want users to accomplish a task and a single screen generally will not give enough context. Consider defining the task that you want the user to accomplish.</p>
+				<p>Because interviews will be roughly 30 minutes, respect your users' time by presenting just enough. You want users to accomplish a task and a single screen generally will not give enough context. Consider defining the task that you want the user to accomplish.</p>
 
 				<p class="temp">Viewport
 				[----full web site------] too long!
@@ -73,9 +81,6 @@
 
 				<p class="temp">Can I show several versions of a screen and have users vote?
 				Avoid this scenario for a few reasons. Having users review isolated screens removes the context of use and takes them into a passive "Mona Lisa Mode" in which screens are observed like paintings instead of a tool to accomplish a task. Additionally, you will not be talking to a sample size large enough for voting responses to be meaningful.</p>
-
-<!-- 			<h2>Script</h2> -->
-<!-- 				<p>Walk through the prototype and question storm; brainstorming what you want to learn. Assemble your questions into a document which will serve as your script. Don't be concerned with having to answer every single question; because you are creating a habit of regular research you will answer these in future sessions.</p> -->
 
 			<h3>Key Discoverables</h3>
 
@@ -87,7 +92,7 @@
 				</div>
 
 			<h3>Specific Questions</h3>
-				<p>Walk through the prototype and document in your script the questions for each screen.</p>
+				<p>Walk through the prototype and document questions on each screen. Don't be concerned with having to answer every single question; because you are creating a habit of regular research you will answer these in future sessions.</p>
 
 				<div class="example">
 					<h4><span>Example</span></h4>
@@ -100,14 +105,18 @@
 
 				<div class="example">
 					<h4><span>Example</span></h4>
-					<p>&ldquo;Where do you usually go to seek retirement savings advice? Why?&rdquo;</p>
-					<p>&ldquo;If I asked you to describe your outlook when it comes to the amount you have saved what would you say? Why?&rdquo;</p>
+					<ul>
+						<li>&ldquo;Where do you usually go to seek retirement savings advice? Why?&rdquo;</li>
+						<li>&ldquo;If I asked you to describe your outlook when it comes to the amount you have saved what would you say? Why?&rdquo;</li>
+					</ul>
 				</div>
 
-				<p id="button-complete">Draft Script: Complete</p>
+				<div class="checklist-button">
+					<p id="button-draft-script" class="button-incomplete">Draft Script: Complete</p>
+				</div>
 
 			<h2>Write Screener</h2>
-				<p>The best possible audience is actual users. If your users have a login and can be identified through usage data, even better.</p>
+				<p>The best possible audience is your actual users. If your users have a login and can be identified through usage data, even better.</p>
 
 			<h3>Who do we want to talk to?</h3>
 				<p>Determine the characteristics of the users you want to talk to. As you take notes, determine specifically how you will get at this information. Put them in your draft script for now, and  enter them into <a href="https://ethn.io/">ethn.io</a> later.</p>
@@ -116,9 +125,11 @@
 					<h4><span>Example</span></h4>
 					<p>We want to evaluate the user flow and visualizations in our new retirement planning feature.</p>
 					<p>We want to talk to<br />
-					Active users who have logged into our app in the past 2 months [get from analytics]<br />
-					Mix of early retirement savers (20's 30's) and later-stage retirement savers (40's and 50's)
-					[age]</p>
+					<ul>
+						<li>Active users who have logged into our app in the past 2 months [get from analytics]</li>
+						<li>Mix of early retirement savers (20's 30's) and later-stage retirement savers (40's and 50's)
+					[age]</li>
+					</ul>
 				</div>
 
 			<h3>Who do we NOT want to talk to?</h3>
@@ -129,15 +140,17 @@
 					<h4><span>Example</span></h4>
 					<p>We want to evaluate the user flow and visualizations in our new retirement planning feature.</p>
 					<p>We do not want to talk to<br />
-					Dormant users who have not logged into the app in the past 2 weeks
-					[get from analytics]<br />
-					Financial planners, anyone involved in the finance industry
-					[job title]<br />
-					Retirees
-					[job title] OR [are you retired? Y/N]<br />
-					Anyone not actively saving for retirement
-					[are you currently saving for retirement? Y/N]<br />
-					[better: which of the retirement accounts do you have 401K/Roth IRA/Health Savings Account(HSA)/Other(what)]</p>
+					<ul>
+						<li>Dormant users who have not logged into the app in the past 2 weeks<br />
+						[get from analytics]</li>
+						<li>Financial planners, anyone involved in the finance industry<br />
+						[job title]</li>
+						<li>Retirees<br />
+						[job title] OR [are you retired? Y/N]</li>
+						<li>Anyone not actively saving for retirement
+						<br />[are you currently saving for retirement? Y/N]<br />
+						[better: which of the retirement accounts do you have 401K/Roth IRA/Health Savings Account(HSA)/Other(what)]</li>
+					</ul>
 				</div>
 
 				<p>Make sure your screener questions are clear to avoid false positives and negatives</p>
@@ -153,22 +166,12 @@
 
 				<p>Remember it's not a survey
 				Demographic data such as gender, marital status, household income is only helpful to the extent it affects the behavior you are researching.
-				For example, if you are researching a retirement planning tool, someone who is 26 may view retirement savings differently than a 50 year old.
-				But remember, we aren't conducting a quantitative survey. You are only going to interview 8-10 users. Keep in mind you are developing a habit of talking to users. You will have many more opportunities to further your research.</p>
+				For example, in researching a retirement planning tool, someone who is 26 may view retirement savings differently than a 50 year old.
+				Remember, you aren't conducting a quantitative survey. You are only going to interview 8-10 users. Keep in mind you are developing a habit of talking to users and you will have many more opportunities to further your research.</p>
 
-
-				<p>Common Questions<p>
-				<p>"Isn't it easier to send a survey?"
-				Nope.
-				**Question** "What if I can't talk to real users?"
-				You may find yourself 
-				**Question** "Should we test with a regular panel?"
-				Short answer: No
-				Long answer: Here is Michael Margolis 
-				**Question** "Should we talk to our friends and family?"
-				Not if you want your research to be taken seriously</p>
-
-				<p id="button-complete">Write Screener: Complete</p>
+				<div class="checklist-button">
+					<p id="button-write-screener" class="button-incomplete">Write Screener: Complete</p>
+				</div>
 			
 			<h2>Define Recruit Pool</h2>
 
@@ -182,15 +185,19 @@
 				<p>If possible, separate usage data you can get from analytics from screener questions users will answer. This allows you to whittle down your pool and reduces user error answering screener questions - you don't have to rely on a user trying to recall the last time they logged in. Use SQL to filter out or pinpoint users; or find someone who will teach you how.</p>
 
 				<div class="example">
-					<h4><span>Examples</span></h4>
-					<p>Users who have logged at least once in the past 2 weeks<br />
-					Users who have downloaded our mobile app</p>
+					<h4><span>Example</span></h4>
+					<ul>
+						<li>Users who have logged at least once in the past 2 weeks</li>
+						<li>Users who have downloaded our mobile app</li>
+					</ul>
 				</div>
 
-				<p id="button-complete">Determine Recruit Pool: Complete</p>	
+				<div class="checklist-button">
+					<p id="button-recruit-pool" class="button-incomplete">Determine Recruit Pool: Complete</p>
+				</div>	
 
 			<h2>Send Screener</h2>
-				<p>Now it's time to send out your screener. Use an email marketing app if you have access to one; MailChimp is a good one. For subject lines, I have found a simple "Can you help?" performs well. For the body content, keep it short and sweet.</p>
+				<p>Now it's time to send out your screener. Use an email marketing app if you have access to one; MailChimp is a good one. For subject lines, I have found a simple &ldquo;Can you help?&rdquo; performs well. For the body content, keep it short and sweet.</p>
 
 				<div class="example">
 					<h4><span>Example</span></h4>
@@ -199,10 +206,34 @@
 					[link to screener]</p>
 				</div>
 
-				<p>TIP
-				Mondays are typically low turnout</p>
+				<p><i class="far fa-lightbulb"></i> TIP
+				Mondays are typically low turnout. Aim for Wednesdays, Thursdays, and Friday mornings. Be mindful of time zones and communicate clearly to your users what time zone you are in.</p>
 
-				<p id="button-complete">Send Screener: Complete</p>
+				<div class="checklist-button">
+					<p id="button-send-screener" class="button-incomplete">Send Screener: Complete</p>
+				</div>
+
+				<div>
+				<h3>Common Questions</h3>
+				<p>&ldquo;Isn't it easier to send a survey?&rdquo;
+				Nope. Surveys are not a good tool to understand user behavior on a web site for the following reasons:
+				Surveys are a quantitative tool
+				Good survey questions are difficult to write
+				Asking users to recall browsing behavior will likely result in incorrect self-reporting
+				You miss opportunities to ask valuable of-the-moment questions.</p>
+
+				<p>&ldquo;What if I can't talk to real users?&rdquo;
+				If you find yourself in a position where you cannot talk to users with logins, there are still options available. You can recruit on Craigslist, Facebook, Twitter, Task Rabbit, or online classifieds. Be sure to screen carefully.</p>
+
+				<p>&ldquo;Should we talk to our friends and family?&rdquo;
+				Be cautious of using a friends and family pool, as it is far too easy for internal audiences to dismiss your results. You can recruit within your personal network, as long as they meet screening requirements. My rule of thumb is FOAF ("Friend of a Friend"); I do not want to have ever met the person I am talking to. DO not rely heavily on this pool.</p>
+
+				<p>&ldquo;Should we test with a regular panel?&rdquo;
+				No. Relying on a small set of users to represent all users will cut you off from potentially valuable learnings. Additionally, test panels have the tendency to know too much about the product and will become too much a part of the organization. Keep your user pool fresh and you will evolve your learnings over time.</p>
+				</div>
+
+				<p id="next-page"><i class="fas fa-chevron-circle-right fa-lg"></i> <a href="daytwo.html">Keep it going! Day Two: Set Up</a></p>
+			
 			</div>
 
 	</main>

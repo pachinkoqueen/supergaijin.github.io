@@ -50,6 +50,18 @@ main {
 	padding-bottom: 20px;
 }
 
+/* Remove checklist from mobile view */
+@media screen and (max-width: 1024px)  {
+
+div #checklist {
+	display: none;
+}
+
+div .checklist-button {
+	display: none;
+}
+
+}
 
 
 /* ===============
@@ -81,19 +93,35 @@ nav {
 main {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 70px 50px;
+	margin: 70px 0;
 }
 
 main .intro {
-	flex: 0 0 200px;
+	flex: 0 0 250px;
 	flex-direction: column;
 	margin-right: 80px;
+}
+
+main .intro-heading  {
+	margin-left: 50px;
 }
 
 main .body-content {
 	flex: 1 0 0;
 	flex-direction: column;
 }
+
+/* Full-width style */
+/*main .without-sidebar {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 70px auto;
+}
+
+div .body-without-sidebar {
+	width: 80%;
+	margin: 70px auto;
+}*/
 
 footer .about {
 	display: flex;
@@ -304,14 +332,16 @@ main p {
 
 #checklist {
 	background-color: rgba(39,60,51,100);
-	padding: 20px;
+	border-radius: 0 15px 15px 0;
+	padding: 20px 50px 70px 50px;
+	margin-top: 50px;
 }
 
 #checklist h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
 	color: rgba(252,248,188,100);
-	font-weight: 300;
+	font-weight: 200;
 	text-transform: uppercase;
 }
 
@@ -319,10 +349,10 @@ main p {
 	font-family: 'Oswald', sans-serif;
 	font-size: 18px;
 	color: rgba(252,248,188,100);
-	font-weight: 300;
+	font-weight: 200;
 }
 
-#button-complete {
+.button-incomplete {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	color: rgba(250,245,230,100);
@@ -332,8 +362,20 @@ main p {
 	border-radius: 8px;
 	padding: 10px;
 	width: 250px;
-	margin-bottom: 60px;
+	margin: 0 auto 60px;
+}
 
+.button-complete {
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	color: rgba(250,245,230,100);
+	font-weight: 300;
+	text-align: center;
+	background-color: rgba(151,151,151,100);
+	border-radius: 8px;
+	padding: 10px;
+	width: 250px;
+	margin: 0 auto 60px;
 }
 
 /* === EXAMPLE STYLES === */
@@ -363,7 +405,13 @@ h4 span {
 	margin-bottom: 30px;
 }
 
-
+.example li {
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 16px;
+	color: rgba(3,11,43,100);
+	line-height: 22px;
+	margin-bottom: 20px;
+}
 
 /* === FOOTER === */
 

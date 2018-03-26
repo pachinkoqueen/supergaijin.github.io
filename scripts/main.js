@@ -14,18 +14,22 @@ $(document).ready(function() {
 //when user clicks on about tab again, slide down and hide about div
 //seems like a toggle is a good idea
 
-console.log('About Slider')
+console.log('About slider')
 $('.about').hide();
 	$('.about-tab').click(function() {
 		$('.about').slideToggle(1000);
 	});
 
+console.log('Sticky checklist')
+
+
 
 //CHECKOFF FUNCTIONALITY
+//NOTE DOES NOT APPEAR IN MOBILE
 //first check to see if local storage is supported
-//when user clicks on Completed button
-//replace the undone icon in checklist with done icon
-//change button state to status-complete
+//when user clicks on completed button
+//replace the undone icon (css class far fa-circle) in checklist with done icon (css class far fa-check-circle)
+//change button state (css class button-incomplete) to status-complete (css class button-complete)
 //toggle functionality
 //if user clicks on status-complete
 //replace done icon in checklist with undone icon
@@ -41,6 +45,7 @@ if (typeof(Storage) !== 'undefined') {
 } else {
 	//Sorry! No web storage support
 }
+
 
 
 
@@ -61,10 +66,36 @@ if (typeof(Storage) !== 'undefined') {
 // window.addEventListener('scroll', function(e) {
 //   console.log(e)
 // })
+
+
+
 //...and don't delete this little guy below
 });
 
 
+
+// $(document).ready(function(){
+//   $("input.toggle").each(function() {
+//        var savedValue = localStorage.getItem( $(this).attr("id") );
+//        if ( savedValue )
+//        {
+//             $('input[name=foo]').attr('checked', true);
+//        }
+//   }); 
+
+//   $("input.toggle").bind("click", function(){
+//       localStorage.setItem($(this).attr("id"), $(this).attr('checked'));
+//   });
+
+// });
+
+//set a listener event
+
+// $('#button-draft-script').click(function(){
+//   $('p').attr('color', 'blue');
+// });
+
+//make a function that changes 
 
 
 
