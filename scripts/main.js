@@ -23,6 +23,31 @@ $('.about').hide();
 console.log('Sticky checklist')
 
 
+//checklist changing icon class
+$('.button-share-findings').on('click', function() {
+	$('.checklist-share-findings, .button-share-findings')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle ')
+		.toggleClass('fa-check-circle')
+	});
+
+$('.button-keep-going').on('click', function() {
+	$('.checklist-keep-going, .button-keep-going')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle')
+		.toggleClass('fa-check-circle')
+	});
+
+
+$('.button-extend-research').on('click', function() {
+	$('.checklist-extend-research, .button-extend-research')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle')
+		.toggleClass('fa-check-circle')
+	});
+
+
+
 
 //CHECKOFF FUNCTIONALITY
 //NOTE DOES NOT APPEAR IN MOBILE
@@ -39,15 +64,12 @@ console.log('Local storage setup')
 if (typeof(Storage) !== 'undefined') {
 	//put all the rest of the code in here
 	// Store
-	localStorage.setItem('draft-script','complete')
+	localStorage.setItem('extend-research','complete')
 	//Retrieve
 	document.getElementById('result')
 } else {
 	//Sorry! No web storage support
 }
-
-
-
 
 //STICKY CHECKLIST
 
@@ -71,6 +93,14 @@ if (typeof(Storage) !== 'undefined') {
 
 //...and don't delete this little guy below
 });
+
+
+
+
+
+
+
+
 
 
 

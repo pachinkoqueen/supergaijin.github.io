@@ -1,17 +1,3 @@
-/*=== TEMPORARY STYLE FOR TK ===*/
-
-.temp {
-	font-family: 'Lato', sans-serif;
-	font-size: 18px;
-	color: rgba(3,11,43,100);
-	font-style: italic;
-	line-height: 24px;
-	margin-bottom: 20px;
-}
-
-
-
-
 /* ===============
    MOBILE RULES 
    =============== */
@@ -50,7 +36,7 @@ main {
 	padding-bottom: 20px;
 }
 
-/* Remove checklist from mobile view */
+/* Remove checklist and checklist buttonsfrom mobile view */
 @media screen and (max-width: 1024px)  {
 
 div #checklist {
@@ -87,41 +73,54 @@ nav {
 	flex-grow: 1;
 }
 
-/* Tryna make two columns */
-/*Use shorthand flex: flex-grow flex-shrink flex-basis
-*/
 main {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 70px 0;
+	width: 80%;
+}
+
+main .sidebar {
+	flex: 0 0 250px;
+	flex-direction: column;
 }
 
 main .intro {
-	flex: 0 0 250px;
+	flex: 1 0 0;
 	flex-direction: column;
-	margin-right: 80px;
-}
-
-main .intro-heading  {
-	margin-left: 50px;
+	margin: 0 50px 50px 50px;
 }
 
 main .body-content {
 	flex: 1 0 0;
 	flex-direction: column;
+	margin-left: 80px;
 }
 
-/* Full-width style */
-/*main .without-sidebar {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 70px auto;
+#checklist {
+	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0px;
 }
 
-div .body-without-sidebar {
-	width: 80%;
-	margin: 70px auto;
+/*main .body-content-single-column {
+	justify-content: center;
+	align-items: center;
+	margin: 0 150px;
 }*/
+
+/*main .full-width {
+	justify-content: center;
+	align-items: center;
+	margin: 0 150px;
+}*/
+
+div .checklist-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
 
 footer .about {
 	display: flex;
@@ -140,8 +139,6 @@ footer .about-content {
 }
 
 }
-
-
 
 /* ===============
    ALL OTHER STYLES 
@@ -249,6 +246,7 @@ nav {
 
 /* === BODY STYLES === */
 
+/* === BODY LINKS === */
 
 main a:link {
 	color: rgba(138,146,1,100);
@@ -270,13 +268,15 @@ main a:active {
 	text-decoration: underline;
 }
 
+/* === HEADINGS === */
+
 h1 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 28px;
 	color: rgba(3,11,43,100);
 	line-height: 34px;
 	text-transform: uppercase;
-	margin-bottom: 18px;
+	margin-bottom: 10px;
 }
 
 h2 {
@@ -284,7 +284,7 @@ h2 {
 	font-size: 24px;
 	color: rgba(11,140,143,100);
 	line-height: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 h3 {
@@ -293,15 +293,11 @@ h3 {
 	color: rgba(17,85,102,100);
 	line-height: 26px;
 	text-transform: uppercase;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 strong {
 	font-weight: 700;
-}
-
-main {
-	width: 80%;
 }
 
 main p {
@@ -310,6 +306,15 @@ main p {
 	color: rgba(3,11,43,100);
 	line-height: 22px;
 	margin-bottom: 20px;
+}
+
+main ul li {
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 16px;
+	color: rgba(3,11,43,100);
+	line-height: 22px;
+	list-style-type: circle;
+	margin-left: 50px;
 }
 
 .subheading {
@@ -332,11 +337,10 @@ main p {
 
 /* === CHECKLIST STYLES === */
 
-#checklist {
+main #checklist {
 	background-color: rgba(39,60,51,100);
 	border-radius: 0 15px 15px 0;
 	padding: 20px 50px 70px 50px;
-	margin-top: 50px;
 }
 
 #checklist h2 {
@@ -345,6 +349,7 @@ main p {
 	color: rgba(252,248,188,100);
 	font-weight: 200;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 #checklist p {
@@ -354,7 +359,9 @@ main p {
 	font-weight: 200;
 }
 
-.button-incomplete {
+/* === CHECKLIST BUTTON STYLES === */
+
+#button-incomplete {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	color: rgba(250,245,230,100);
@@ -364,7 +371,6 @@ main p {
 	border-radius: 8px;
 	padding: 10px;
 	width: 250px;
-	margin: 0 auto 60px;
 }
 
 .button-complete {
@@ -377,7 +383,6 @@ main p {
 	border-radius: 8px;
 	padding: 10px;
 	width: 250px;
-	margin: 0 auto 60px;
 }
 
 /* === EXAMPLE STYLES === */
@@ -481,3 +486,4 @@ h4 span {
 	color: rgba(250,245,230,100);
 	text-decoration: none;
 }
+
