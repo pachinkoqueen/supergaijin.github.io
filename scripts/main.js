@@ -1,4 +1,4 @@
-// let's test this
+//let's test this
 
 console.log('We are connected YAY')
 
@@ -20,15 +20,18 @@ $('.about').hide();
 		$('.about').slideToggle(1000);
 	});
 
-console.log('Sticky checklist')
-
 
 //checklist changing icon class
+
+
+//DAY FOUR BUTTONS
+//i'm sure there's a better way to do this
 $('.button-share-findings').on('click', function() {
 	$('.checklist-share-findings, .button-share-findings')
 		.find('[data-fa-i2svg]')
 		.toggleClass('fa-circle ')
 		.toggleClass('fa-check-circle')
+		localStorage.setItem('share-findings','complete')
 	});
 
 $('.button-keep-going').on('click', function() {
@@ -36,6 +39,7 @@ $('.button-keep-going').on('click', function() {
 		.find('[data-fa-i2svg]')
 		.toggleClass('fa-circle')
 		.toggleClass('fa-check-circle')
+		localStorage.setItem('keep-going','complete')
 	});
 
 
@@ -44,10 +48,31 @@ $('.button-extend-research').on('click', function() {
 		.find('[data-fa-i2svg]')
 		.toggleClass('fa-circle')
 		.toggleClass('fa-check-circle')
+		localStorage.setItem('extend-research','complete')
 	});
 
 
+// localStorage.getItem('draft-script')
+// "complete"
+var itemsComplete = localStorage.getItem('extend-research')
+// undefined
+// itemsComplete
+// "complete"
+// if itemsComplete = 'complete' {
+// VM713:1 Uncaught SyntaxError: Unexpected identifier
+// if itemsComplete = 'complete' { console.log('yes')}
+// VM755:1 Uncaught SyntaxError: Unexpected identifier
+// if (itemsComplete = 'complete') { console.log('yes')}
 
+	if (itemsComplete = 'complete') {
+		$('.button-share-findings').on('click', function() {
+			$('.checklist-share-findings, .button-share-findings')
+				.find('[data-fa-i2svg]')
+				.toggleClass('fa-circle ')
+				.toggleClass('fa-check-circle')
+				// localStorage.setItem('share-findings','complete')
+	});
+	}
 
 //CHECKOFF FUNCTIONALITY
 //NOTE DOES NOT APPEAR IN MOBILE
@@ -71,9 +96,41 @@ if (typeof(Storage) !== 'undefined') {
 	//Sorry! No web storage support
 }
 
+
+
+
+
+
+
+
+//...and don't delete this little guy below
+});
+
+
+
+ // ===================
+ //   JQUERY GRAVEYARD
+ // ===================
+
+
+localStorage.getItem('draft-script')
+"complete"
+var one = localStorage.getItem('draft-script')
+undefined
+one
+"complete"
+if(one === true) {
+	alert('yep')
+}
+
+
+
+
+
+
 //STICKY CHECKLIST
 
-//localStorage.setItem('write-screener','completed')
+// localStorage.setItem('write-screener','completed')
 // var itemsToComplete = {
 // 	writeScreener: true,
 // 	otherThing: false,
@@ -83,59 +140,9 @@ if (typeof(Storage) !== 'undefined') {
 
 // var fromLocalStorage = localStorage.getItem('items-to-complete')
 
-// window.addEventListener('scroll', (e) => console.log(e))
-// is the same as
-// window.addEventListener('scroll', function(e) {
-//   console.log(e)
-// })
 
 
 
-//...and don't delete this little guy below
-});
-
-
-
-
-
-
-
-
-
-
-
-// $(document).ready(function(){
-//   $("input.toggle").each(function() {
-//        var savedValue = localStorage.getItem( $(this).attr("id") );
-//        if ( savedValue )
-//        {
-//             $('input[name=foo]').attr('checked', true);
-//        }
-//   }); 
-
-//   $("input.toggle").bind("click", function(){
-//       localStorage.setItem($(this).attr("id"), $(this).attr('checked'));
-//   });
-
-// });
-
-//set a listener event
-
-// $('#button-draft-script').click(function(){
-//   $('p').attr('color', 'blue');
-// });
-
-//make a function that changes 
-
-
-
-
-
-
-
- // ===================
- //   JQUERY GRAVEYARD
- // ===================
 //failed toggle efforts
 //NOPE
 	// $('.about').hide();
