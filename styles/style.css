@@ -408,16 +408,11 @@ h4 span {
     padding: 0 15px;
 }
 
-.example p {
-	margin-bottom: 30px;
-}
-
 .example li {
 	font-family: 'Quattrocento', sans-serif;
 	font-size: 16px;
 	color: rgba(3,11,43,100);
 	line-height: 22px;
-	margin-bottom: 20px;
 }
 
 /* === FOOTER === */
