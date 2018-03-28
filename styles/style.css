@@ -456,28 +456,6 @@ h4 span {
 
 /* === TIP STYLES === */
 
-/*.tip {
-	display: flex;
-	align-items: flex-start;
-	flex-wrap: nowrap;
-	margin-bottom: 20px;
-}
-
-.tip-left {
-	flex-shrink: 1;
-	color: rgba(247,165,10,100);
-	padding: 20px;
-}
-
-.tip-right {
-	font-family: 'Quattrocento', sans-serif;
-	font-size: 16px;
-	color: rgba(3,11,43,100);
-	line-height: 22px;
-	background-color: rgba(254,226,156,100);
-	padding: 20px 0;
-}*/
-
 
 .tip {
 	display: flex;
@@ -499,6 +477,16 @@ h4 span {
 	flex: 1 0 0;
 	flex-direction: column;
 	padding: 10px;
+}
+
+/* === FONT AWESOME === */
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 10px;
+	padding: 5px;
 }
 
 
