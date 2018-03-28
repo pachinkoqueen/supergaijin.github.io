@@ -161,14 +161,15 @@ $('.button-extend-research').on('click', function() {
 
 var itemsComplete = localStorage.getItem('share-findings')
 
-// 	if (itemsComplete = 'complete') {
-// 		$('.button-share-findings').on('click', function() {
-// 			$('.checklist-share-findings, .button-share-findings')
-// 				.find('[data-fa-i2svg]')
-// 				.toggleClass('fa-circle ')
-// 				.toggleClass('fa-check-circle')
-// 	});
-// 	}
+	if (itemsComplete = 'complete') {
+		console.log(itemsComplete);
+
+		// $('.button-share-findings').on('click', function() {
+		// 	$('.checklist-share-findings, .button-share-findings')
+		// 		.find('[data-fa-i2svg]')
+		// 		.toggleClass('fa-circle ')
+		// 		.toggleClass('fa-check-circle')
+	};
 
 
 //...and don't delete this little guy below

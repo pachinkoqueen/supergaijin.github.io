@@ -36,6 +36,7 @@ main {
 	padding-bottom: 20px;
 }
 
+
 /* Remove checklist and checklist buttonsfrom mobile view */
 @media screen and (max-width: 1024px)  {
 
@@ -452,6 +453,50 @@ h4 span {
 	color: rgba(3,11,43,100);
 	line-height: 22px;
 }
+
+/* === TIP STYLES === */
+
+/*.tip {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	margin-bottom: 20px;
+}
+
+.tip-left {
+	flex-shrink: 1;
+	color: rgba(247,165,10,100);
+	padding: 20px;
+}
+
+.tip-right {
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 16px;
+	color: rgba(3,11,43,100);
+	line-height: 22px;
+	background-color: rgba(254,226,156,100);
+	padding: 20px 0;
+}*/
+
+
+.tip {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.tip-left {
+	flex: 0 0 50px;
+	flex-direction: column;
+	align-self: flex-start;
+	color: rgba(247,165,10,100);
+}
+
+.tip-right {
+	flex: 1 0 0;
+	flex-direction: column;
+}
+
 
 /* === FOOTER === */
 
