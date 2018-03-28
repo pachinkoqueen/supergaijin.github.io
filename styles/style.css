@@ -483,6 +483,8 @@ h4 span {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	background-color: rgba(254,226,156,100);
+	margin-bottom: 15px;
 }
 
 .tip-left {
@@ -490,11 +492,13 @@ h4 span {
 	flex-direction: column;
 	align-self: flex-start;
 	color: rgba(247,165,10,100);
+	padding: 10px;
 }
 
 .tip-right {
 	flex: 1 0 0;
 	flex-direction: column;
+	padding: 10px;
 }
 
 
