@@ -103,18 +103,6 @@ main .body-content {
   	top: 0px;
 }
 
-/*main .body-content-single-column {
-	justify-content: center;
-	align-items: center;
-	margin: 0 150px;
-}*/
-
-/*main .full-width {
-	justify-content: center;
-	align-items: center;
-	margin: 0 150px;
-}*/
-
 div .checklist-button {
 	display: flex;
 	justify-content: center;
@@ -139,6 +127,53 @@ footer .about-content {
 }
 
 }
+
+/* =====================
+   SINGLE COLUMN LAYOUT
+   ===================== */
+
+.single-column {
+	width: 70%;
+	margin: 70px auto;
+}
+
+.single-column p {
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 16px;
+	color: rgba(3,11,43,100);
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.single-column ul li {
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 16px;
+	color: rgba(3,11,43,100);
+	line-height: 22px;
+	list-style-type: circle;
+	margin-left: 50px;
+}
+
+.single-column a:link {
+	color: rgba(138,146,1,100);
+	text-decoration: none;
+}
+
+.single-column a:visited {
+	color: rgba(138,146,1,100);
+	text-decoration: none;
+}
+
+.single-column a:hover {
+	color: rgba(138,146,1,100);
+	text-decoration: underline;
+}
+
+.single-column a:active {
+	color: rgba(138,146,1,100);
+	text-decoration: underline;
+}
+
 
 /* ===============
    ALL OTHER STYLES 
