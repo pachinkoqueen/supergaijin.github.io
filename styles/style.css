@@ -493,31 +493,14 @@ h4 span {
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
+	height: 100%;
 	margin-bottom: 15px;
 }
 
-/*.tip-left {
-	flex: 0 0 50px;
-	flex-direction: column;
-	align-self: flex-start;
-	color: rgba(247,165,10,100);
-	padding: 10px;
+.flex-right {
+	width: 80%;
 }
 
-.tip-right {
-	flex: 1 0 0;
-	flex-direction: column;
-	padding: 10px;
-}*/
-
-/*.flex-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: 10px;
-	padding: 5px;
-}
-*/
 
 
 /* === FOOTER === */
