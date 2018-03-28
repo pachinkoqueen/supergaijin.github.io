@@ -32,6 +32,39 @@ $('.about').hide();
 //replace done icon in checklist with undone icon
 //change button state to status-incomplete
 
+//DAY ONE BUTTONS
+$('.button-draft-script').on('click', function() {
+	$('.checklist-draft-script, .button-draft-script')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle ')
+		.toggleClass('fa-check-circle')
+		localStorage.setItem('draft-script','complete')
+	});
+
+$('.button-write-screener').on('click', function() {
+	$('.checklist-write-screener, .button-write-screener')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle ')
+		.toggleClass('fa-check-circle')
+		localStorage.setItem('write-screener','complete')
+	});
+
+$('.button-define-recruit-pool').on('click', function() {
+	$('.checklist-define-recruit-pool, .button-define-recruit-pool')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle ')
+		.toggleClass('fa-check-circle')
+		localStorage.setItem('define-recruit-pool','complete')
+	});
+
+$('.button-send-out-screener').on('click', function() {
+	$('.checklist-send-out-screener, .button-send-out-screener')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle ')
+		.toggleClass('fa-check-circle')
+		localStorage.setItem('define-recruit-pool','complete')
+	});
+
 //DAY TWO BUTTONS
 $('.button-schedule-recruits').on('click', function() {
 	$('.checklist-schedule-recruits, .button-schedule-recruits')
