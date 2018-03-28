@@ -57,12 +57,12 @@ $('.button-define-recruit-pool').on('click', function() {
 		localStorage.setItem('define-recruit-pool','complete')
 	});
 
-$('.button-send-out-screener').on('click', function() {
-	$('.checklist-send-out-screener, .button-send-out-screener')
+$('.button-send-screener').on('click', function() {
+	$('.checklist-send-screener, .button-send-screener')
 		.find('[data-fa-i2svg]')
 		.toggleClass('fa-circle ')
 		.toggleClass('fa-check-circle')
-		localStorage.setItem('define-recruit-pool','complete')
+		localStorage.setItem('send-screener','complete')
 	});
 
 //DAY TWO BUTTONS
