@@ -21,8 +21,41 @@ $('.about').hide();
 	});
 
 
-//checklist changing icon class
+//CHECKOFF FUNCTIONALITY
+//NOTE DOES NOT APPEAR IN MOBILE
+//first check to see if local storage is supported
+//when user clicks on completed button
+//replace the undone icon (css class far fa-circle) in checklist with done icon (css class far fa-check-circle)
+//change button state (css class button-incomplete) to status-complete (css class button-complete)
+//toggle functionality
+//if user clicks on status-complete
+//replace done icon in checklist with undone icon
+//change button state to status-incomplete
 
+//DAY THREE BUTTONS
+$('.button-interview-users').on('click', function() {
+	$('.checklist-interview-users, .button-interview-users')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle ')
+		.toggleClass('fa-check-circle')
+		localStorage.setItem('interview-users','complete')
+	});
+
+$('.button-send-incentives').on('click', function() {
+	$('.checklist-send-incentives, .button-send-incentives')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle ')
+		.toggleClass('fa-check-circle')
+		localStorage.setItem('send-incentives','complete')
+	});
+
+$('.button-review-with-team').on('click', function() {
+	$('.checklist-review-with-team, .button-review-with-team')
+		.find('[data-fa-i2svg]')
+		.toggleClass('fa-circle ')
+		.toggleClass('fa-check-circle')
+		localStorage.setItem('review-with-team','complete')
+	});
 
 //DAY FOUR BUTTONS
 //i'm sure there's a better way to do this
@@ -52,55 +85,16 @@ $('.button-extend-research').on('click', function() {
 	});
 
 
-// localStorage.getItem('draft-script')
-// "complete"
-var itemsComplete = localStorage.getItem('extend-research')
-// undefined
-// itemsComplete
-// "complete"
-// if itemsComplete = 'complete' {
-// VM713:1 Uncaught SyntaxError: Unexpected identifier
-// if itemsComplete = 'complete' { console.log('yes')}
-// VM755:1 Uncaught SyntaxError: Unexpected identifier
-// if (itemsComplete = 'complete') { console.log('yes')}
+var itemsComplete = localStorage.getItem('share-findings')
 
-	if (itemsComplete = 'complete') {
-		$('.button-share-findings').on('click', function() {
-			$('.checklist-share-findings, .button-share-findings')
-				.find('[data-fa-i2svg]')
-				.toggleClass('fa-circle ')
-				.toggleClass('fa-check-circle')
-				// localStorage.setItem('share-findings','complete')
-	});
-	}
-
-//CHECKOFF FUNCTIONALITY
-//NOTE DOES NOT APPEAR IN MOBILE
-//first check to see if local storage is supported
-//when user clicks on completed button
-//replace the undone icon (css class far fa-circle) in checklist with done icon (css class far fa-check-circle)
-//change button state (css class button-incomplete) to status-complete (css class button-complete)
-//toggle functionality
-//if user clicks on status-complete
-//replace done icon in checklist with undone icon
-//change button state to status-incomplete
-
-console.log('Local storage setup')
-if (typeof(Storage) !== 'undefined') {
-	//put all the rest of the code in here
-	// Store
-	localStorage.setItem('extend-research','complete')
-	//Retrieve
-	document.getElementById('result')
-} else {
-	//Sorry! No web storage support
-}
-
-
-
-
-
-
+// 	if (itemsComplete = 'complete') {
+// 		$('.button-share-findings').on('click', function() {
+// 			$('.checklist-share-findings, .button-share-findings')
+// 				.find('[data-fa-i2svg]')
+// 				.toggleClass('fa-circle ')
+// 				.toggleClass('fa-check-circle')
+// 	});
+// 	}
 
 
 //...and don't delete this little guy below
@@ -112,21 +106,37 @@ if (typeof(Storage) !== 'undefined') {
  //   JQUERY GRAVEYARD
  // ===================
 
+// "complete"
+// var itemsComplete = localStorage.getItem('share-findings')
+// undefined
+// itemsComplete
+// "complete"
+// if itemsComplete = 'complete' {
+// VM713:1 Uncaught SyntaxError: Unexpected identifier
+// if itemsComplete = 'complete' { console.log('yes')}
+// VM755:1 Uncaught SyntaxError: Unexpected identifier
+// if (itemsComplete = 'complete') { console.log('yes')}
 
-localStorage.getItem('draft-script')
-"complete"
-var one = localStorage.getItem('draft-script')
-undefined
-one
-"complete"
-if(one === true) {
-	alert('yep')
-}
+	// if (itemsComplete = 'complete') {
+	// 	$('.button-share-findings').on('click', function() {
+	// 		$('.checklist-share-findings, .button-share-findings')
+	// 			.find('[data-fa-i2svg]')
+	// 			.toggleClass('fa-circle ')
+	// 			.toggleClass('fa-check-circle')
+	// });
+	// }
 
 
-
-
-
+// console.log('Local storage setup')
+// if (typeof(Storage) !== 'undefined') {
+// 	//put all the rest of the code in here
+// 	// Store
+// 	localStorage.setItem('extend-research','complete')
+// 	//Retrieve
+// 	document.getElementById('result')
+// } else {
+// 	//Sorry! No web storage support
+// }
 
 //STICKY CHECKLIST
 
