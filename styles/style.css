@@ -356,6 +356,15 @@ main ul li {
 	margin-left: 50px;
 }
 
+main ol li {
+	font-family: 'Quattrocento', sans-serif;
+	font-size: 16px;
+	color: rgba(3,11,43,100);
+	line-height: 22px;
+	list-style-type: decimal;
+	margin-left: 50px;
+}
+
 .subheading {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
