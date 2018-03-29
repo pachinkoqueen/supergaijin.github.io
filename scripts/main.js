@@ -7,170 +7,173 @@ console.log('We are connected YAY')
 $(document).ready(function() {
 //put all functions in here
 
-
-//ABOUT SLIDER
-//on default hide the about content
-//when user clicks on about tab, slide up to reveal the about div
-//when user clicks on about tab again, slide down and hide about div
-//seems like a toggle is a good idea
-
-console.log('About slider')
-$('.about').hide();
-	$('.about-tab').click(function() {
-		$('.about').slideToggle(1000);
-	});
+	// var itemsComplete = localStorage.getItem('share-findings')
+function checkIt(){
+	var itemsComplete = localStorage.getItem('share-findings')
+		if (itemsComplete = 'complete') {
+			console.log('hi');
 
 
-//CHECKOFF FUNCTIONALITY
-//NOTE DOES NOT APPEAR IN MOBILE
-//first check to see if local storage is supported
-//when user clicks on completed button
-//replace the undone icon (css class far fa-circle) in checklist with done icon (css class far fa-check-circle)
-//change button state (css class button-incomplete) to status-complete (css class button-complete)
-//toggle functionality
-//if user clicks on status-complete
-//replace done icon in checklist with undone icon
-//change button state to status-incomplete
+			// $('.button-share-findings').on('click', function() {
+			// 	$('.checklist-share-findings, .button-share-findings')
+			// 		.find('[data-fa-i2svg]')
+			// 		.toggleClass('fa-circle ')
+			// 		.toggleClass('fa-check-circle')
+			// });
+		}
+	}
 
-//DAY ONE BUTTONS
-$('.button-draft-script').on('click', function() {
-	$('.checklist-draft-script, .button-draft-script')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('draft-script','complete')
-	});
+	checkIt()
 
-$('.button-write-screener').on('click', function() {
-	$('.checklist-write-screener, .button-write-screener')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('write-screener','complete')
-	});
+	//ABOUT SLIDER
+	//on default hide the about content
+	//when user clicks on about tab, slide up to reveal the about div
+	//when user clicks on about tab again, slide down and hide about div
+	//seems like a toggle is a good idea
 
-$('.button-define-recruit-pool').on('click', function() {
-	$('.checklist-define-recruit-pool, .button-define-recruit-pool')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('define-recruit-pool','complete')
-	});
-
-$('.button-send-screener').on('click', function() {
-	$('.checklist-send-screener, .button-send-screener')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('send-screener','complete')
-	});
-
-//DAY TWO BUTTONS
-$('.button-schedule-recruits').on('click', function() {
-	$('.checklist-schedule-recruits, .button-schedule-recruits')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('schedule-recruits','complete')
-	});
-
-$('.button-set-up-room').on('click', function() {
-	$('.checklist-set-up-room, .button-set-up-room')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('set-up-room','complete')
-	});
-
-$('.button-refine-script').on('click', function() {
-	$('.checklist-refine-script, .button-refine-script')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('refine-script','complete')
-	});
-
-$('.button-qa-prototype').on('click', function() {
-	$('.checklist-qa-prototype, .button-qa-prototype')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('qa-prototype','complete')
-	});
-
-$('.button-remind-team').on('click', function() {
-	$('.checklist-remind-team, .button-remind-team')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('remind-team','complete')
-	});
-
-//DAY THREE BUTTONS
-$('.button-interview-users').on('click', function() {
-	$('.checklist-interview-users, .button-interview-users')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('interview-users','complete')
-	});
-
-$('.button-send-incentives').on('click', function() {
-	$('.checklist-send-incentives, .button-send-incentives')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('send-incentives','complete')
-	});
-
-$('.button-review-with-team').on('click', function() {
-	$('.checklist-review-with-team, .button-review-with-team')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('review-with-team','complete')
-	});
-
-//DAY FOUR BUTTONS
-//i'm sure there's a better way to do this
-$('.button-share-findings').on('click', function() {
-	$('.checklist-share-findings, .button-share-findings')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle ')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('share-findings','complete')
-	});
-
-$('.button-keep-going').on('click', function() {
-	$('.checklist-keep-going, .button-keep-going')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('keep-going','complete')
-	});
+	console.log('About slider')
+	$('.about').hide();
+		$('.about-tab').click(function() {
+			$('.about').slideToggle(1000);
+		});
 
 
-$('.button-extend-research').on('click', function() {
-	$('.checklist-extend-research, .button-extend-research')
-		.find('[data-fa-i2svg]')
-		.toggleClass('fa-circle')
-		.toggleClass('fa-check-circle')
-		localStorage.setItem('extend-research','complete')
-	});
+	//CHECKOFF FUNCTIONALITY
+	//NOTE DOES NOT APPEAR IN MOBILE
+	//first check to see if local storage is supported
+	//when user clicks on completed button
+	//replace the undone icon (css class far fa-circle) in checklist with done icon (css class far fa-check-circle)
+	//change button state (css class button-incomplete) to status-complete (css class button-complete)
+	//toggle functionality
+	//if user clicks on status-complete
+	//replace done icon in checklist with undone icon
+	//change button state to status-incomplete
+
+	//DAY ONE BUTTONS
+	$('.button-draft-script').on('click', function() {
+		$('.checklist-draft-script, .button-draft-script')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('draft-script','complete')
+		});
+
+	$('.button-write-screener').on('click', function() {
+		$('.checklist-write-screener, .button-write-screener')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('write-screener','complete')
+		});
+
+	$('.button-define-recruit-pool').on('click', function() {
+		$('.checklist-define-recruit-pool, .button-define-recruit-pool')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('define-recruit-pool','complete')
+		});
+
+	$('.button-send-screener').on('click', function() {
+		$('.checklist-send-screener, .button-send-screener')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('send-screener','complete')
+		});
+
+	//DAY TWO BUTTONS
+	$('.button-schedule-recruits').on('click', function() {
+		$('.checklist-schedule-recruits, .button-schedule-recruits')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('schedule-recruits','complete')
+		});
+
+	$('.button-set-up-room').on('click', function() {
+		$('.checklist-set-up-room, .button-set-up-room')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('set-up-room','complete')
+		});
+
+	$('.button-refine-script').on('click', function() {
+		$('.checklist-refine-script, .button-refine-script')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('refine-script','complete')
+		});
+
+	$('.button-qa-prototype').on('click', function() {
+		$('.checklist-qa-prototype, .button-qa-prototype')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('qa-prototype','complete')
+		});
+
+	$('.button-remind-team').on('click', function() {
+		$('.checklist-remind-team, .button-remind-team')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('remind-team','complete')
+		});
+
+	//DAY THREE BUTTONS
+	$('.button-interview-users').on('click', function() {
+		$('.checklist-interview-users, .button-interview-users')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('interview-users','complete')
+		});
+
+	$('.button-send-incentives').on('click', function() {
+		$('.checklist-send-incentives, .button-send-incentives')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('send-incentives','complete')
+		});
+
+	$('.button-review-with-team').on('click', function() {
+		$('.checklist-review-with-team, .button-review-with-team')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('review-with-team','complete')
+		});
+
+	//DAY FOUR BUTTONS
+	//i'm sure there's a better way to do this
+	$('.button-share-findings').on('click', function() {
+		$('.checklist-share-findings, .button-share-findings')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle ')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('share-findings','complete')
+		});
+
+	$('.button-keep-going').on('click', function() {
+		$('.checklist-keep-going, .button-keep-going')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('keep-going','complete')
+		});
 
 
-var itemsComplete = localStorage.getItem('share-findings')
-
-	if (itemsComplete = 'complete') {
-		console.log(itemsComplete);
-
-		// $('.button-share-findings').on('click', function() {
-		// 	$('.checklist-share-findings, .button-share-findings')
-		// 		.find('[data-fa-i2svg]')
-		// 		.toggleClass('fa-circle ')
-		// 		.toggleClass('fa-check-circle')
-	};
-
+	$('.button-extend-research').on('click', function() {
+		$('.checklist-extend-research, .button-extend-research')
+			.find('[data-fa-i2svg]')
+			.toggleClass('fa-circle')
+			.toggleClass('fa-check-circle')
+			localStorage.setItem('extend-research','complete')
+		});
 
 //...and don't delete this little guy below
 });
